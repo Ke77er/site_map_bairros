@@ -1,16 +1,17 @@
 <template>
 	<div id="app">
 		<div class="main-section">
-			<div class="nav-bar">
+			<SectionMap />
+			<!-- <div class="nav-bar">
 				<span class="page_services hover-target">Escritório</span>
 				<span class="page_plans hover-target">Áreas de atuação</span>
 				<span class="page_portifolio hover-target">Duvidas sobre Contratação</span>
 				<span class="page_clients hover-target">Contato</span>
 				<span class="page_clients hover-target">Blog</span>
-			</div>
+			</div> -->
 			<!-- <div class="about-text hover-target">Sobre</div>
 			<div class="contact-text hover-target">Contato</div> -->
-			<div class="center-section">
+			<!-- <div class="center-section">
 				<div class="container-fluid">
 					<div class="row justify-content-center">
 						<header id="page-top">
@@ -18,9 +19,9 @@
 								<div class="intro-text">
 									<div class="intro-lead-in">Entre em contato para agendar uma consulta.<br> Obtenha uma análize personalizada do seu caso.</div>
 									<div class="intro-heading">Advocacia Biana Cardoso</div>
-									<!-- <a class="page-text">Maximizar o crescimento de empresas com planos estratégicos de
+									<a class="page-text">Maximizar o crescimento de empresas com planos estratégicos de
 										marketing personalizados e altamente eficazes.</a><br>
-									<a class="page-text">Conheça nosso trabalho!</a> -->
+									<a class="page-text">Conheça nosso trabalho!</a>
 
 								</div>
 
@@ -29,7 +30,7 @@
 					</div>
 
 				</div>
-			</div>
+			</div> -->
 			<!-- <div class="div-inferior">
 				<div class="container">
 					<div class="row justify-content-center">
@@ -54,7 +55,7 @@
 			</div> -->
 			
 		</div>
-		<SectionFooter />
+		<!-- <SectionFooter />
 
 		<div class="layerindex page_about-section">
 			<div class="about-close hover-target"></div>
@@ -88,7 +89,7 @@
 			<div class="page_clients-close hover-target exit-target"></div>
 			<SectionClients />
 
-		</div>
+		</div> -->
 
 		<div class='cursor' id="cursor"></div>
 		<div class='cursor2' id="cursor2"></div>
@@ -106,6 +107,7 @@ import SectionPlans from './components/section_plans.vue';
 import SectionPortifolio from './components/section_portifolio.vue';
 import SectionClients from './components/section_clients.vue';
 import SectionFooter from './components/section_footer.vue';
+import SectionMap from './components/map.vue';
 export default {
 	name: 'app',
 	components: {
@@ -116,6 +118,7 @@ export default {
 		SectionPortifolio,
 		SectionClients,
 		SectionFooter,
+		SectionMap,
 
 	},
 
@@ -296,7 +299,6 @@ body {
 	background-position: center center;
 	background-size: cover;
 	/* ou contain conforme necessário */
-	overflow: hidden;
 	height: 100vh;
 	-webkit-transition: all 300ms linear;
 	transition: all 300ms linear;
@@ -395,6 +397,7 @@ a:hover {
 	-webkit-transition-delay: 400ms;
 	transition-delay: 400ms;
 	transform-origin: center top;
+	overflow: hidden;
 }
 
 .main-section h1 {
